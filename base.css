@@ -390,8 +390,8 @@ strong, .strong {
   object-fit: contain;
 }
 
-/* - Main   our vision */
-#ourvision {
+/* - Main   My Vision */
+#myVision {
   background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
