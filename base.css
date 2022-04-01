@@ -340,6 +340,11 @@ strong, .strong {
   align-items: center;
   margin: 0 auto 3.5rem;
 }
+.mySchoolDays-list_date {
+  font-size: 0.7rem;
+  color: rgba(0,0,0,0.34);
+  margin-right: 1.5rem;
+}
 .mySchoolDays-list_img {
   width: 50vw;
   z-index: 1;
@@ -449,8 +454,8 @@ strong, .strong {
 
 }
 
-/* - Main   news */
-.news-list_item {
+/* - Main   myProgrammingStudy */
+.myProgrammingStudy-list_item {
   display: flex;
   justify-content: space-between;
   padding-bottom: 1rem;
@@ -458,23 +463,23 @@ strong, .strong {
   border-bottom: 1px solid rgba(0,0,0,0.12)
 }
 
-.news-list_txt {
+.myProgrammingStudy-list_txt {
   width: 100%;
   margin-left: 1rem;
 }
 
-.news-list_meta {
+.myProgrammingStudy-list_meta {
   display: flex;
   justify-content: flex-start;
 }
-.news-list_date {
+.myProgrammingStudy-list_date {
   font-size: 0.7rem;
   color: rgba(0,0,0,0.34);
   margin-right: 1.5rem;
 }
 
 
-.news-list_ttl a {
+.myProgrammingStudy-list_ttl a {
   color: #585656;
   font-size: 0.95rem;
 }
