@@ -327,13 +327,15 @@ strong, .strong {
   animation: gradientEffect 2.5s infinite alternate;
 }
 
+.ta-center {
+  text-align: center;
+}
+
+/* - Main   My School Days */
 #mySchoolDays.sec {
   padding-bottom: 0;
 }
 
-.ta-center {
-  text-align: center;
-}
 .mySchoolDays-list_item {
   display: flex;
   justify-content: space-between;
@@ -454,7 +456,7 @@ strong, .strong {
 
 }
 
-/* - Main   myProgrammingStudy */
+/* - Main   My Programming Study */
 .myProgrammingStudy-list_item {
   display: flex;
   justify-content: space-between;
@@ -495,14 +497,14 @@ strong, .strong {
 }
 
 
-/* - Main   recruit */
-.recruit-list_link:hover {
+/* - Main   Contact Me */
+.contactMe-list_link:hover {
   background-color: #ff69b4;
 }
-.recruit-list_link:hover .fa-arrow-right {
+.contactMe-list_link:hover .fa-arrow-right {
   color: #fff;
 }
-.recruit_catch p {
+.contactMe_catch p {
   color: #585656;
   text-align: center;
   font-size: 1.33333rem;
@@ -512,25 +514,25 @@ strong, .strong {
   font-weight: bold;
 }
 
-.recruit_detail {
+.contactMe_detail {
   background: #fff;
   text-align: center;
   padding: 2.5rem;
 }
 
-.recruit-list {
+.contactMe-list {
   display: flex;
   justify-content: center;
 }
-.recruit-list_item {
+.contactMe-list_item {
   margin-right: 2rem;
   width: 100%;
   max-width: 25%;
 }
-.recruit-list li:last-child {
+.contactMe-list li:last-child {
   margin-right: 0;
 }
-.recruit-list_link {
+.contactMe-list_link {
   color: #ff69b4;
   display: block;
   padding: 1rem 2.5rem;
@@ -540,33 +542,33 @@ strong, .strong {
   font-weight: 700;
 }
 
-.recruit-list_link strong {
+.contactMe-list_link strong {
   display: block;
   margin-top: 1rem;
   color:#4D4D4D;
 }
 
-a.recruit-list_link:hover {
+a.contactMe-list_link:hover {
   color: #fff;
 }
-a.recruit-list_link i::before {
+a.contactMe-list_link i::before {
   color:#ff69b4;
 }
-a.recruit-list_link:hover i::before {
+a.contactMe-list_link:hover i::before {
   color:#fff;
 }
 @media screen and (max-width: 768px){
-  .recruit-list {
+  .contactMe-list {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
   }
-  .recruit-list_item {
+  .contactMe-list_item {
 	margin: 0 2rem 2rem 0 ;
 	width: 35%;
 	max-width: unset;
   }
-  .recruit-list_link {
+  .contactMe-list_link {
 	padding: 1rem;
   }
 }
