@@ -331,6 +331,7 @@ strong, .strong {
   text-align: center;
 }
 
+
 /* - Main   My School Days */
 #mySchoolDays.sec {
   padding-bottom: 0;
@@ -379,18 +380,48 @@ strong, .strong {
 .mySchoolDays-list  .mySchoolDays-list_item:nth-child(2) .mySchoolDays-list_img {
   order: 2;
 }
-.fa-arrow-circle-right::before {
-  content: "\f0a9";
-  margin-left: 0.5rem;
-  color: #ff69b4;
-  transition: .1s ease-in-out;
+
+
+/* - Main   My Programming Study */
+.myProgrammingStudy-list_item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  margin: 0 0 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.12)
 }
-.educure-logo, .techpassion-logo,.redfire-logo {
-  max-height: 4rem;
-  height: 100%;
-  margin-bottom: 2.5rem;
-  object-fit: contain;
+
+.myProgrammingStudy-list_txt {
+  width: 100%;
+  margin-left: 1rem;
 }
+
+.myProgrammingStudy-list_meta {
+  display: flex;
+  justify-content: flex-start;
+}
+.myProgrammingStudy-list_date {
+  font-size: 0.7rem;
+  color: rgba(0,0,0,0.34);
+  margin-right: 1.5rem;
+}
+
+
+.myProgrammingStudy-list_ttl a {
+  color: #585656;
+  font-size: 0.95rem;
+}
+
+.study_tag {
+  font-size: 1.3rem;
+  margin: 0 0 1rem;
+}
+
+.study_tag a {
+  color: #4D4D4D;
+  font-weight: bold;
+}
+
 
 /* - Main   My Vision */
 #myVision {
@@ -454,46 +485,6 @@ strong, .strong {
 	margin: 0 0 1.5rem;
   }
 
-}
-
-/* - Main   My Programming Study */
-.myProgrammingStudy-list_item {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-  margin: 0 0 1rem;
-  border-bottom: 1px solid rgba(0,0,0,0.12)
-}
-
-.myProgrammingStudy-list_txt {
-  width: 100%;
-  margin-left: 1rem;
-}
-
-.myProgrammingStudy-list_meta {
-  display: flex;
-  justify-content: flex-start;
-}
-.myProgrammingStudy-list_date {
-  font-size: 0.7rem;
-  color: rgba(0,0,0,0.34);
-  margin-right: 1.5rem;
-}
-
-
-.myProgrammingStudy-list_ttl a {
-  color: #585656;
-  font-size: 0.95rem;
-}
-
-.study_tag {
-  font-size: 1.3rem;
-  margin: 0 0 1rem;
-}
-
-.study_tag a {
-  color: #4D4D4D;
-  font-weight: bold;
 }
 
 
