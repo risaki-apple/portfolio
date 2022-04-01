@@ -327,25 +327,25 @@ strong, .strong {
   animation: gradientEffect 2.5s infinite alternate;
 }
 
-#ourservice.sec {
+#mySchoolDays.sec {
   padding-bottom: 0;
 }
 
 .ta-center {
   text-align: center;
 }
-.ourservice-list_item {
+.mySchoolDays-list_item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto 3.5rem;
 }
-.ourservice-list_img {
+.mySchoolDays-list_img {
   width: 50vw;
   z-index: 1;
   margin:auto calc(50% - 50vw);
 }
-.ourservice-list_txt {
+.mySchoolDays-list_txt {
   width: 60%;
   z-index: 2;
   background-color: rgba(255,255,255,0.95);
@@ -366,10 +366,10 @@ strong, .strong {
   color: rgba(0,0,0,0.54);
 }
 
-.ourservice-list .ourservice-list_item:nth-child(2) .ourservice-list_txt {
+.mySchoolDays-list .mySchoolDays-list_item:nth-child(2) .mySchoolDays-list_txt {
   order: 1;
 }
-.ourservice-list  .ourservice-list_item:nth-child(2) .ourservice-list_img {
+.mySchoolDays-list  .mySchoolDays-list_item:nth-child(2) .mySchoolDays-list_img {
   order: 2;
 }
 .fa-arrow-circle-right::before {
