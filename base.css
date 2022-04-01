@@ -490,12 +490,14 @@ strong, .strong {
 
 
 /* - Main   Contact Me */
+#contactMe.sec {
+  margin-bottom: 8rem;
+}
+
 .contactMe-list_link:hover {
   background-color: #ff69b4;
 }
-.contactMe-list_link:hover .fa-arrow-right {
-  color: #fff;
-}
+
 .contactMe_catch p {
   color: #585656;
   text-align: center;
@@ -507,7 +509,7 @@ strong, .strong {
 }
 
 .contactMe_detail {
-  background: #fff;
+  background-color: rgba(255,255,255,0.95);
   text-align: center;
   padding: 2.5rem;
 }
