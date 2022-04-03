@@ -5,58 +5,7 @@
   <title>Risaki's Portfolio</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" type="text/css" href="base.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel='dns-prefetch' href='https://kit.fontawesome.com' />
-  <script type='text/javascript' src='https://kit.fontawesome.com/7e07c3bc5b.js' id='font-awesome-js'></script>
-  <script>
-    $(function(){
-
-      // main visual
-      var cnt = 0;
-      var myinterval = setInterval(function () {
-          $(".kv-item:not(:first-child)").hide();
-          $(".kv-item").eq(0).fadeOut(1000);
-          $(".kv-item").eq(1).fadeIn(1000);
-          $(".kv-item").eq(0).appendTo("#kv-items");
-        }, 4000);
-
-      // Humberger
-      $(".burger, #nav_wrapper").click(function(){
-        $('.burger').toggleClass('close-btn');
-      });
-
-      // Animation
-      addShow();
-      $('#header').addClass('show');
-
-      var scrolltimer;
-      $(window).on('scroll', function(){
-        var scrolltimer = 0;
-        if (scrolltimer != null) {
-          clearTimeout(scrolltimer);
-        }
-        scrolltimer = setTimeout(function () {
-          addShow();
-        }, 300);
-      });
-
-      function addShow() {
-        $(".trans").each(function(){
-          var scrTop = $(window).scrollTop();
-          var scrBtm = scrTop + $(window).height();
-          var itemTop = $(this).offset().top;
-          if($(this).hasClass('to-up')) itemTop = itemTop - 48;
-          var itemBtm = itemTop + $(this).height();
-          if(itemTop < scrBtm && itemBtm > scrTop) {
-            $(this).addClass('show');
-          } else {
-            $(this).removeClass('show');
-          }
-        });
-      }
-    });
-
-    </script>
+  <script type="text/javascript" src="jquery.min.js"></script>
 </head>
 
 
