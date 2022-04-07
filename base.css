@@ -529,6 +529,7 @@ strong, .strong {
 .contactMe-list_link {
   color: #ff69b4;
   display: block;
+  overflow-wrap: break-word;
   padding: 1rem 1rem;
   border: solid 1px rgba(0,0,0,0.12);
   border-radius:30px;
@@ -538,6 +539,7 @@ strong, .strong {
 
 .contactMe-list_link strong {
   display: block;
+  overflow-wrap: break-word;
   margin-top: 1rem;
   color:#4D4D4D;
 }
@@ -595,8 +597,8 @@ a.contactMe-list_link:hover i::before {
   justify-content: flex-end;
 }
 .fnav_item {
-  margin-right: 2em;
-  margin-bottom: 2em;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 .fnav_link {
   color: rgba(255,255,255,0.87);
@@ -606,6 +608,15 @@ a.contactMe-list_link:hover i::before {
 @media screen and (max-width: 768px){
   .footer-inner {
     flex-flow: column-reverse;
+  }
+
+  .fnav_item {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .fnav_item:last-child {
+    margin-right: 0;
   }
 
 }
