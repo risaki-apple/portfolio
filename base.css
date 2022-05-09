@@ -529,9 +529,9 @@ strong, .strong {
   justify-content: center;
 }
 .contactMe-list_item {
-  margin-right: 2rem;
+  margin-right: 6rem;
   width: 100%;
-  max-width: 25%;
+  max-width: 35%;
 }
 .contactMe-list li:last-child {
   margin-right: 0;
@@ -554,15 +554,25 @@ strong, .strong {
   color:#4D4D4D;
 }
 
-a.contactMe-list_link:hover {
+.contactMe-jump_link {
+  margin-top: 1rem;
+  transition-duration: 0.3s;
+}
+
+p.contactMe-list_link:hover {
   color: #fff;
 }
-a.contactMe-list_link i::before {
+p.contactMe-list_link i::before {
   color:#ff69b4;
 }
-a.contactMe-list_link:hover i::before {
+p.contactMe-list_link:hover i::before {
   color:#fff;
 }
+
+.contactMe-jump_link:hover {
+  transform: scale(1.5,1.5); 
+}
+
 @media screen and (max-width: 768px){
   .contactMe-list {
 	display: flex;
