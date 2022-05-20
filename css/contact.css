@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* index.php */
+.Form {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+  
+.Form-Item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+  
+@media screen and (max-width: 768px) {
+    .Form {
+      width: 80%; 
+      margin: 0 auto;
+    } 
+  
+    .Form-Item {
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      display: block;
+    }
+
+    .input_error {
+        margin-bottom: 30px;
+    }
+
+    .input_error:last-child {
+        margin-bottom: 14px;
+    }
+}
+  
+.Form-Item-Label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+    color: #585656;
+}
+  
+.error {
+    display: block;
+}
+@media screen and (max-width: 768px) {
+    .Form-Item-Label {
+      max-width: inherit;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+    }
+}
+.Form-Item-Label.isMsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+@media screen and (max-width: 768px) {
+    .Form-Item-Label.isMsg {
+      margin-top: 0;
+    }
+}
+.Form-Item-Label-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #585656;
+    color: #fff;
+    font-size: 14px;
+}
+.Form-Item-Label-No-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #9d9a9a;
+    color: #fff;
+    font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+    .Form-Item-Label-Required, .Form-Item-Label-No-Required{
+      border-radius: 4px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      width: 32px;
+      font-size: 10px;
+    }
+}
+.Form-Item-Input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100vh;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+}
+  
+.contact_input{
+    margin-left: 40px;
+    color: #ff69b4;
+}
+  
+@media screen and (max-width: 768px) {
+    .Form-Item-Input {
+      margin-left: 0;
+      margin-top: 18px;
+      height: 40px;
+      flex: inherit;
+      font-size: 15px;
+    }
+    .contact_input{
+      margin-left: 0;
+    }  
+}
+.Form-Item-Textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100vh;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+    .Form-Item-Textarea {
+      margin-top: 18px;
+      margin-left: 0;
+      height: 200px;
+      flex: inherit;
+      font-size: 15px;
+    }
+}
+.Form-Btn {
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #545454;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+.Form-Btn:hover{
+    transform: scale(0.9,0.9);
+    color: #eb88b9;
+}
+@media screen and (max-width: 768px) {
+    .Form-Btn {
+      margin-top: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 160px;
+      font-size: 16px;
+    }
+}
+
+/* confirm.php */
+.contact_confirm {
+    color: #585656;
+    text-align: center;
+    margin: 3.5rem;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.Form-Item.confirm {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.confirm_button {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.confirm_back_button {
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 5px;
+    width: 130px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #9d9a9a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    transition-duration: 0.3s;
+    margin-right: 1rem;
+}
+
+.confirm_submit_button {
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 5px;
+    width: 130px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #545454;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    transition-duration: 0.3s;
+    margin-left: 1rem;
+}
+
+.confirm_back_button:hover,.confirm_submit_button:hover{
+    transform: scale(0.9,0.9);
+    color: #eb88b9;
+}
+
+/* thanks.php */
+.thanks_container {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.thanks_contactName{
+    font-weight: bold;
+}
+
+.thanks_contactName,.thanks_contents {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.thanks_contactName {
+    margin-bottom: 0.5rem;
+}
+
+.thanks_back_button {
+    margin-top: 2.5rem;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 5px;
+    background: #9d9a9a;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+.thanks_back_button:hover {
+    transform: scale(0.9,0.9);
+    color: #eb88b9;
+}
