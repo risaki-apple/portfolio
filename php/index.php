@@ -14,7 +14,7 @@
   <div id="content">
   <header id="header" class="delay1000 to-down">
     <div id="inner-header">
-    <div id="logo"><img src="../image/name.png" width="195" height="50"></div>
+    <div id="logo"><img src="../images/name.png" width="195" height="50"></div>
     <div class="burger">
       <span class="bgr-top"></span>
       <span class="bgr-mid"></span>
@@ -35,11 +35,11 @@
     <main id="main">
       <section id="kv">
         <div id="kv-items">
-          <div class="kv-item"><img src="../image/topimage1.jpg"></div>
-          <div class="kv-item" style="display:none;"><img src="../image/topimage2.jpg"></div>
-          <div class="kv-item" style="display:none;"><img src="../image/topimage3.jpg"></div>
-          <div class="kv-item" style="display:none;"><img src="../image/topimage4.jpg"></div>
-          <div class="kv-item" style="display:none;"><img src="../image/topimage5.jpg"></div>
+          <div class="kv-item"><img src="../images/topimage1.jpg"></div>
+          <div class="kv-item" style="display:none;"><img src="../images/topimage2.jpg"></div>
+          <div class="kv-item" style="display:none;"><img src="../images/topimage3.jpg"></div>
+          <div class="kv-item" style="display:none;"><img src="../images/topimage4.jpg"></div>
+          <div class="kv-item" style="display:none;"><img src="../images/topimage5.jpg"></div>
         </div>
         <div id="kv-txt" class="delay500 to-up trans">
           <p><strong>Hello!!</strong>　渡辺里咲と申します。「里咲」と書いて「りさき」と読みますが、学生時代はよく名前を読み間違えられて、「りさ」と呼ばれておりました。</strong></p>
@@ -51,7 +51,7 @@
         <h1 class="section-ttl to-down trans">My School Days</h1>
         <ul class="mySchoolDays-list">
           <li class="mySchoolDays-list_item">
-            <div class="mySchoolDays-list_img trans to-up"><img src="../image/school1.jpg" class="img"></div>
+            <div class="mySchoolDays-list_img trans to-up"><img src="../images/school1.jpg" class="img"></div>
             <div class="mySchoolDays-list_txt trans to-up">
               <p class="mySchoolDays-list_date">2017年10月</p>
               <p class="catch">茨城県立土浦第二高等学校中退</p>
@@ -59,7 +59,7 @@
             </div>
           </li>
           <li class="mySchoolDays-list_item flex-reverse">
-            <div class="mySchoolDays-list_img trans to-up"><img src="../image/school2.jpg" class="img"></div>
+            <div class="mySchoolDays-list_img trans to-up"><img src="../images/school2.jpg" class="img"></div>
             <div class="mySchoolDays-list_txt trans to-up">
               <p class="mySchoolDays-list_date">2018年4月</p>
               <p class="catch">私立明治学院高等学校入学</p>
@@ -67,7 +67,7 @@
             </div>
           </li>
           <li class="mySchoolDays-list_item flex-reverse">
-            <div class="mySchoolDays-list_img trans to-up"><img src="../image/school3.jpg" class="img"></div>
+            <div class="mySchoolDays-list_img trans to-up"><img src="../images/school3.jpg" class="img"></div>
             <div class="mySchoolDays-list_txt trans to-up">
               <p class="mySchoolDays-list_date">2021年3月</p>
               <p class="catch">私立明治学院高等学校卒業</p>
@@ -176,7 +176,7 @@
 
     <footer class="footer">
       <div class="footer-inner">
-        <p class="footer-logo"><img src="../image/name.png"></p>
+        <p class="footer-logo"><img src="../images/name.png"></p>
         <nav id="footer-nav">
           <ul class="fnav">
             <li class="fnav_item"><a href="#mySchoolDays" class="fnav_link">My School Days</a></li>

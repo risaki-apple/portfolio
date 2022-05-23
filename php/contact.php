@@ -29,7 +29,7 @@ if(isset($_POST['submitted'])) {
             </div>
             <div class="Form-Item">
                 <p class="Form-Item-Label"><span class="Form-Item-Label-No-Required">任意</span>電話番号</p>
-                <input type="tell" name="tell" class="Form-Item-Input input_error" placeholder="例）000-0000-0000" value="<?php if(isset($_POST['tell'])) echo $_POST['tell'];?>" /> 
+                <input type="tell" name="tell" class="Form-Item-Input" placeholder="例）000-0000-0000" value="<?php if(isset($_POST['tell'])) echo $_POST['tell'];?>" /> 
             </div>
             <div class="Form-Item">
                 <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>

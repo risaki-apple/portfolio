@@ -5,9 +5,11 @@ $tell = trim($_POST['tell']);
 $comments = trim($_POST['comments']);
 
 
-if(isset($_POST['confirm_submitted'])) {
-    mb_language("japanese");
+if(isset($_POST['confirm_submitted']) && $_POST['confirm_submitted']) {
+    mb_language("ja");
     mb_internal_encoding("UTF-8");
+
+    //自分宛
     $emailTo = "risa.apple.17@gmail.com";
     $subject = "ポートフォリオへのお問い合わせ";
     $body = "
@@ -21,14 +23,12 @@ if(isset($_POST['confirm_submitted'])) {
 -------------------------------------------------
 ";
     $title = "[渡辺里咲]ポートフォリオ";
-    $from = mb_encode_mimeheader("$title"."のお問い合わせ","UTF-8");
-    $headers = 'From: '.$from.' <'.$email.'>';
-    mb_send_mail($emailTo, $subject, $body, $headers);
+    $from = mb_encode_mimeheader("$title","UTF-8");
+    $header = "From: " .$from ."<risakiapple@sv1.php.xdomain.ne.jp>";
+    mb_send_mail($emailTo, $subject, $body, $header);
 
     //自動返信用
     $subject = 'お問い合わせ受付のお知らせ';
-    $from = mb_encode_mimeheader("$title","UTF-8");
-    $headers2 = 'From: '.$from.' <'.$emailTo.'>';
     $body = "
 $name 様 \r\n
 $title にお問い合わせありがとうございます。\r\n
@@ -41,7 +41,8 @@ $title にお問い合わせありがとうございます。\r\n
 お問い合わせ内容：$comments \r\n
 -------------------------------------------------
 ";
-    mb_send_mail($email, $subject, $body, $headers2);
+    $header2 = "From: " .$from ."<$emailTo>";
+    mb_send_mail($email, $subject, $body, $header2);
     $emailSent = true;
 
     if(isset($emailSent) && $emailSent == true) {
