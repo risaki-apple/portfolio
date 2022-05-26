@@ -7,8 +7,10 @@
   <link rel="stylesheet" type="text/css" href="../css/base.css">
   <link rel="stylesheet" type="text/css" href="../css/contact.css">
   <script type="text/javascript" src="../jquery.min.js"></script>
-  <script src="https://kit.fontawesome.com/b466a3db98.js" crossorigin="anonymous"></script></head>
-
+  <!-- <script src="https://kit.fontawesome.com/b466a3db98.js" crossorigin="anonymous"></script> -->
+  <link rel="icon" href="../favicon.ico">
+  <link rel="apple-touch-ico" href="../apple-touch-icon.png" sizes="180x180">
+</head>
 
 <body>
   <div id="content">
@@ -126,8 +128,7 @@
                 <div class="myProgrammingStudy-list_ttl">
                   <a>
                     会社が提携しているスクールでさらに技術力を磨く。
-                    自己制作課題ではアパレル向けECサイトを一から１人で制作。
-                    最終的に、約700人の生徒の中で総合評価ランキング1位を獲得。
+                    ５ヶ月間スクールに通い、最終的に、約700人の生徒の中で総合評価ランキング1位を獲得。
                   </a>
                 </div>
               </div>
@@ -176,7 +177,7 @@
 
     <footer class="footer">
       <div class="footer-inner">
-        <p class="footer-logo"><img src="../images/name.png"></p>
+        <img class="footer-logo" src="../images/name.png">
         <nav id="footer-nav">
           <ul class="fnav">
             <li class="fnav_item"><a href="#mySchoolDays" class="fnav_link">My School Days</a></li>

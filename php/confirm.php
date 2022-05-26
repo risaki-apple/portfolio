@@ -1,9 +1,13 @@
 <?php
+if($_SERVER["REQUEST_METHOD"] != "POST") {
+    // ブラウザからHTMLページを要求された場合
+    header('Location: index.php');
+}
+
 $name = trim($_POST['contactName']);
 $email = trim($_POST['email']);
 $tell = trim($_POST['tell']);
 $comments = trim($_POST['comments']);
-
 
 if(isset($_POST['confirm_submitted']) && $_POST['confirm_submitted']) {
     mb_language("ja");
@@ -11,35 +15,36 @@ if(isset($_POST['confirm_submitted']) && $_POST['confirm_submitted']) {
 
     //自分宛
     $emailTo = "risa.apple.17@gmail.com";
+    $emailFrom = "risakiapple@sv1.php.xdomain.ne.jp";
     $subject = "ポートフォリオへのお問い合わせ";
     $body = "
 下記の通りお問い合わせを受け付けました。 \r\n
 \r\n
--------------------------------------------------\r\n
+------------------------------------------------------\r\n
 お名前: $name \r\n
 メールアドレス: $email \r\n
 電話番号: $tell \r\n
 お問い合わせ内容: $comments \r\n
--------------------------------------------------
+------------------------------------------------------
 ";
     $title = "[渡辺里咲]ポートフォリオ";
     $from = mb_encode_mimeheader("$title","UTF-8");
-    $header = "From: " .$from ."<risakiapple@sv1.php.xdomain.ne.jp>";
+    $header = "From: " .$from ."<$emailFrom>";
     mb_send_mail($emailTo, $subject, $body, $header);
 
     //自動返信用
     $subject = 'お問い合わせ受付のお知らせ';
     $body = "
 $name 様 \r\n
-$title にお問い合わせありがとうございます。\r\n
+$title へのお問い合わせありがとうございます。\r\n
 内容を確認次第、折り返しご連絡させていただきますので、今しばらくお待ちください。\r\n
 \r\n
--------------------------------------------------\r\n
+------------------------------------------------------\r\n
 お名前：$name \r\n
 メールアドレス：$email \r\n
 電話番号：$tell \r\n
 お問い合わせ内容：$comments \r\n
--------------------------------------------------
+------------------------------------------------------
 ";
     $header2 = "From: " .$from ."<$emailTo>";
     mb_send_mail($email, $subject, $body, $header2);
@@ -62,11 +67,13 @@ $title にお問い合わせありがとうございます。\r\n
     <link rel="stylesheet" type="text/css" href="../css/base.css">
     <link rel="stylesheet" type="text/css" href="../css/contact.css">
     <script type="text/javascript" src="../jquery.min.js"></script>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-ico" href="../apple-touch-icon.png" sizes="180x180">
 </head>
 <body>
     <!-- 入力内容確認画面 -->
     <div class="container">
-        <form action="thanks.php" method="POST">
+        <form action="" method="POST">
             <p class="contact_confirm to-up trans">入力内容確認</p>
             <div class="Form ">
                 <div class="Form-Item confirm">

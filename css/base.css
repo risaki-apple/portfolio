@@ -606,7 +606,6 @@ p.contactMe-list_link:hover i::before {
   padding-top: 3.5rem;
   padding-bottom: 2rem;
   background-color: hsl(319, 36%, 73%);
-  color: #fff;
 }
 
 .footer-logo {
@@ -637,26 +636,24 @@ p.contactMe-list_link:hover i::before {
   margin-right: 0;
 }
 
-.fnav_item a {
-  text-shadow:3px 3px 3px #999595;
-}
-
 .fnav_link {
   color: rgba(255,255,255,0.87);
+  text-shadow:3px 3px 3px #999595;
   display: block;
 }
 
 @media screen and (max-width: 768px){
   .footer-inner {
     flex-flow: column-reverse;
+    padding: 0 1rem;
   }
 
   .fnav_item {
+    margin-right: 1rem;
     margin-bottom: 1.5rem;
   }
-  
+
   .fnav_item:last-child {
     margin-right: 0;
-  }
-
+  }  
 }
