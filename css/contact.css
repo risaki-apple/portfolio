@@ -56,7 +56,7 @@ body {
 @media screen and (max-width: 768px) {
     .Form {
       width: 80%; 
-      margin: 0 auto;
+      margin-left: 0;
     } 
   
     .Form-Item {
@@ -67,13 +67,6 @@ body {
       display: block;
     }
 
-    .input_error {
-        margin-bottom: 30px;
-    }
-
-    .input_error:last-child {
-        margin-bottom: 14px;
-    }
 }
   
 .Form-Item-Label {
@@ -85,9 +78,6 @@ body {
     color: #585656;
 }
   
-.error {
-    display: block;
-}
 @media screen and (max-width: 768px) {
     .Form-Item-Label {
       max-width: inherit;
@@ -152,22 +142,15 @@ body {
     font-size: 18px;
 }
   
-.contact_input{
-    margin-left: 40px;
-    color: #ff69b4;
-}
-  
 @media screen and (max-width: 768px) {
     .Form-Item-Input {
+      width: 100%;
       margin-left: 0;
       margin-top: 18px;
       height: 40px;
       flex: inherit;
       font-size: 15px;
     }
-    .contact_input{
-      margin-left: 0;
-    }  
 }
 .Form-Item-Textarea {
     border: 1px solid #ddd;
@@ -184,6 +167,7 @@ body {
 }
 @media screen and (max-width: 768px) {
     .Form-Item-Textarea {
+      width: 100%;
       margin-top: 18px;
       margin-left: 0;
       height: 200px;
@@ -283,17 +267,9 @@ body {
     text-align: center;
 }
 
-.thanks_contactName{
-    font-weight: bold;
-}
-
-.thanks_contactName,.thanks_contents {
+.thanks_contents {
     text-align: center;
     font-size: 1.2rem;
-}
-
-.thanks_contactName {
-    margin-bottom: 0.5rem;
 }
 
 .thanks_back_button {

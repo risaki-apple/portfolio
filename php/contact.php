@@ -1,9 +1,8 @@
 <?php
-
-if(isset($_POST['submitted'])) {
-    header('Location: confirm.php');
+if($_SERVER["REQUEST_METHOD"] != "POST") {
+    // ブラウザからHTMLページを要求された場合
+    header('Location: index.php');
 }
-
 ?> 
 
 <!DOCTYPE html>
@@ -12,9 +11,11 @@ if(isset($_POST['submitted'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせフォーム</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css">
     <link rel="stylesheet" type="text/css" href="../css/contact.css">
-    <title>お問い合わせフォーム</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-ico" href="../apple-touch-icon.png" sizes="180x180">
 </head>
 <body>
     <div class="Form to-up trans">  
@@ -29,7 +30,7 @@ if(isset($_POST['submitted'])) {
             </div>
             <div class="Form-Item">
                 <p class="Form-Item-Label"><span class="Form-Item-Label-No-Required">任意</span>電話番号</p>
-                <input type="tell" name="tell" class="Form-Item-Input input_error" placeholder="例）000-0000-0000" value="<?php if(isset($_POST['tell'])) echo $_POST['tell'];?>" /> 
+                <input type="tell" name="tell" class="Form-Item-Input" placeholder="例）000-0000-0000" value="<?php if(isset($_POST['tell'])) echo $_POST['tell'];?>" /> 
             </div>
             <div class="Form-Item">
                 <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
