@@ -56,14 +56,9 @@ body {
 @media screen and (max-width: 768px) {
     .Form {
       width: 80%; 
-      margin-left: 0;
     } 
   
     .Form-Item {
-      padding-left: 14px;
-      padding-right: 14px;
-      padding-top: 16px;
-      padding-bottom: 16px;
       display: block;
     }
 
@@ -146,6 +141,7 @@ body {
     .Form-Item-Input {
       width: 100%;
       margin-left: 0;
+      max-width: 450px;
       margin-top: 18px;
       height: 40px;
       flex: inherit;
@@ -170,6 +166,7 @@ body {
       width: 100%;
       margin-top: 18px;
       margin-left: 0;
+      max-width: 450px;
       height: 200px;
       flex: inherit;
       font-size: 15px;
